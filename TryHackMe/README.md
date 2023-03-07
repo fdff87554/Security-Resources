@@ -5,5 +5,4 @@
 * [Wireshark 101](./Wireshark/Wireshark-101.md)
 * [Wireshark: The Basics](./Wireshark/Wireshark-The-Basics.md)
 * [Wireshark: Packet Operations](./Wireshark/Wireshark-Packet-Operations.md)
-
-
+* [Wireshark: Traffic Analysis](./Wireshark/Wireshark-Traffic-Analysis.md)
