@@ -14,7 +14,7 @@ This Repo is for all kinds of Security Learning and Resources.
 - Get the script and run it.
   ```bash
   # get the script
-  curl -L https://raw.githubusercontent.com/fdff87554/Security-Resources/main/install-tools.sh -o ~/install-tools.sh
+  curl -L https://link.crazyfirelee.tw/hack-tools.sh -o ~/install-tools.sh
   # run the script
   sh install-tools.sh
   ```
