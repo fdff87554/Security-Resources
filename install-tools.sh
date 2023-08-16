@@ -143,6 +143,10 @@ cd ~/src/john/src || exit
 
 cd ~/ || exit
 
+# Install githacker
+echo "Installing githacker..."
+sudo pip install githacker
+
 # # Install hash-identifier (kali linux tool)
 # echo "Installing hash-identifier..."
 # sudo apt install hash-identifier -y
