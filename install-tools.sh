@@ -62,12 +62,12 @@ echo "Installing Network Scanning Tools..."
 echo "Installing Nmap..."
 sudo apt install nmap -y
 
-# Install RustScan
-echo "Installing RustScan..."
-# Please remember to check the latest version of RustScan
-wget https://github.com/RustScan/RustScan/releases/download/2.0.1/rustscan_2.0.1_amd64.deb
-sudo dpkg -i rustscan_2.0.1_amd64.deb
-rm ./rustscan_2.0.1_amd64.deb
+# # Install RustScan
+# echo "Installing RustScan..."
+# # Please remember to check the latest version of RustScan
+# wget https://github.com/RustScan/RustScan/releases/download/2.0.1/rustscan_2.0.1_amd64.deb
+# sudo dpkg -i rustscan_2.0.1_amd64.deb
+# rm ./rustscan_2.0.1_amd64.deb
 
 # Install nikto
 echo "Installing nikto..."
@@ -120,6 +120,28 @@ sudo apt install hashcat -y
 # Install hashid
 echo "Installing hashid..."
 sudo apt install hashid -y
+
+# Install BruteForce Tools
+echo "Installing BruteForce Tools..."
+# Install Hydra
+echo "Installing Hydra..."
+sudo apt install hydra -y
+# Install John the Ripper
+echo "Installing John the Ripper..."
+mkdir -p ~/src
+sudo apt -y install git build-essential libssl-dev zlib1g-dev
+# ==== Recommended (extra formats and performance)
+sudo apt -y install yasm pkg-config libgmp-dev libpcap-dev libbz2-dev
+# # ==== If you have NVIDIA GPU(s) (OpenCL support)
+# sudo apt -y install nvidia-opencl-dev
+# # ==== If you have AMD GPU(s) (OpenCL support)
+# sudo apt -y install ocl-icd-opencl-dev opencl-headers
+cd ~/src || exit
+git clone https://github.com/openwall/john -b bleeding-jumbo john
+cd ~/src/john/src || exit
+./configure && make -s clean && make -sj4
+
+cd ~/ || exit
 
 # # Install hash-identifier (kali linux tool)
 # echo "Installing hash-identifier..."
