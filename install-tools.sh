@@ -48,9 +48,9 @@ sudo apt install sublist3r -y
 # echo "Installing Altdns..."
 # pip3 install py-altdns==1.0.2
 
-# - Install Amass
-echo "Installing Amass..."
-sudo apt install amass -y
+# # - Install Amass
+# echo "Installing Amass..."
+# sudo apt install amass -y
 
 # Web Tools
 # dnsdumpster: https://dnsdumpster.com/
