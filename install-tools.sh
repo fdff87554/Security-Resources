@@ -50,7 +50,7 @@ sudo apt install sublist3r -y
 
 # - Install Amass
 echo "Installing Amass..."
-sudo apt install amass
+sudo apt install amass -y
 
 # Web Tools
 # dnsdumpster: https://dnsdumpster.com/
