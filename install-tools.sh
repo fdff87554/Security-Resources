@@ -40,13 +40,13 @@ sudo apt install dnsenum -y
 echo "Installing sublist3r..."
 sudo apt install sublist3r -y
 
-# - Install Subfinder
-echo "Installing Subfinder..."
-go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+# # - Install Subfinder
+# echo "Installing Subfinder..."
+# go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
 
-# - Install Altdns
-echo "Installing Altdns..."
-pip3 install py-altdns==1.0.2
+# # - Install Altdns
+# echo "Installing Altdns..."
+# pip3 install py-altdns==1.0.2
 
 # - Install Amass
 echo "Installing Amass..."
