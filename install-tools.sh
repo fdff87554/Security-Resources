@@ -94,9 +94,9 @@ make -j4
 # sudo dpkg -i rustscan_2.0.1_amd64.deb
 # rm ./rustscan_2.0.1_amd64.deb
 
-# Install nikto
-echo "Installing nikto..."
-sudo apt install nikto -y
+# # Install nikto
+# echo "Installing nikto..."
+# sudo apt install nikto -y
 
 # Install WPscan: a special tool for wordpress
 echo "Installing WPscan..."
