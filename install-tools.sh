@@ -10,34 +10,47 @@ sudo apt autoremove -y
 # Install curl, wget, python3, vim, tmux, git, ...
 echo "Installing curl, wget, python3, vim, tmux, git, ..."
 sudo apt install curl wget python3 python3-pip vim git -y
+sudo apt install libpcap-dev -y
 
 # -----------------------------
 
 # Install DNS Scanning Tools
 echo "Installing DNS Tools..."
-# Install Whois
+# - Install Whois
 echo "Installing Whois..."
 sudo apt install whois -y
 
-# Install nslookup, dig, host dns tools
+# - Install nslookup, dig, host dns tools
 echo "Installing nslookup, dig, host dns tools..."
 sudo apt install dnsutils -y
 
-# Install fierce
+# - Install fierce
 echo "Installing fierce..."
 sudo apt install fierce -y
 
-# Install dnsrecon
+# - Install dnsrecon
 echo "Installing dnsrecon..."
 sudo apt install dnsrecon -y
 
-# Install dnsenum
+# - Install dnsenum
 echo "Installing dnsenum..."
 sudo apt install dnsenum -y
 
-# Install sublist3r
+# - Install sublist3r
 echo "Installing sublist3r..."
 sudo apt install sublist3r -y
+
+# - Install Subfinder
+echo "Installing Subfinder..."
+go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+
+# - Install Altdns
+echo "Installing Altdns..."
+pip3 install py-altdns==1.0.2
+
+# - Install Amass
+echo "Installing Amass..."
+sudo apt install amass
 
 # Web Tools
 # dnsdumpster: https://dnsdumpster.com/
@@ -62,6 +75,18 @@ echo "Installing Network Scanning Tools..."
 echo "Installing Nmap..."
 sudo apt install nmap -y
 
+# Install Naabu
+echo "Installing Naabu..."
+go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
+
+# Install Masscan
+echo "Installing Masscan..."
+sudo apt-get --assume-yes install git make gcc
+git clone https://github.com/robertdavidgraham/masscan
+cd masscan || exit
+make install
+make -j4
+
 # # Install RustScan
 # echo "Installing RustScan..."
 # # Please remember to check the latest version of RustScan
@@ -77,6 +102,11 @@ sudo apt install nikto -y
 echo "Installing WPscan..."
 sudo apt install ruby-full -y
 sudo gem install wpscan
+
+# -----------------------------
+
+# Install SQLMap
+sudo apt install sqlmap -y
 
 # -----------------------------
 
