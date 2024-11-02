@@ -13,6 +13,11 @@ sudo apt install curl wget python3 python3-pip vim git -y
 sudo apt install libpcap-dev -y
 
 # -----------------------------
+# MISC Tools
+# - StegSolve
+
+
+# -----------------------------
 
 # Install DNS Scanning Tools
 echo "Installing DNS Tools..."
